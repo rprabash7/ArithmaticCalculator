@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arithmetic Calculator</title>
+</head>
+<body>
+    <h1>Arithmetic Calculator</h1>
+
+    <!-- Add Form -->
+    <form action="/add" method="get">
+        <label for="num1">Number 1: </label>
+        <input type="number" id="num1" name="num1" required>
+        <label for="num2">Number 2: </label>
+        <input type="number" id="num2" name="num2" required>
+        <button type="submit">Add</button>
+    </form>
+
+    <!-- Subtract Form -->
+    <form action="/subtract" method="get">
+        <input type="number" id="num1" name="num1" required style="display:none;">
+        <input type="number" id="num2" name="num2" required style="display:none;">
+        <button type="submit">Subtract</button>
+    </form>
+
+    <!-- Multiply Form -->
+    <form action="/multiply" method="get">
+        <input type="number" id="num1" name="num1" required style="display:none;">
+        <input type="number" id="num2" name="num2" required style="display:none;">
+        <button type="submit">Multiply</button>
+    </form>
+
+    <!-- Divide Form -->
+    <form action="/divide" method="get">
+        <input type="number" id="num1" name="num1" required style="display:none;">
+        <input type="number" id="num2" name="num2" required style="display:none;">
+        <button type="submit">Divide</button>
+    </form>
+
+</body>
+</html>
